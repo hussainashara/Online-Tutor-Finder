@@ -1,0 +1,38 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href="CSS/inform.css")
+title Register Yourself
+.conhead
+  h2 Register Yourself
+.container
+  form(action="/student", method="POST")
+    .div1
+      label(for="fname") First Name
+      input#fname.fname(type="text", name="fname", maxlength="25")
+      label(for="gender") Gender
+      select#gender(name="gender")
+        option(value="male") Male
+        option(value="male") Female
+        option(value="male") Others
+      label(for="add1") Address 1
+      textarea#add1(name="add1", cols="33", rows="3")
+      label(for="town") Town/City
+      input.town#town(type="text", name="town")
+      label(for="pincode") Postal Code
+      input#pincode.pincode(type="number", name="pincode")
+    .div2
+      label(for="fname") Last Name
+      input#lname.lname(type="text", maxlength="25", name="lname")
+      label(for="phone") Phone Number
+
+      input.phone#phone(type="number", maxlength="10", name="phone")
+      label(for="add1") Address 2
+      textarea#add2(name="add2", cols="33", rows="3")
+      label(for="town") State
+      input.state#state(type="text", name="state")
+      label(for="country") Country
+      input#country.country(type="text", name="country")
+    .submit
+      input#submit.btnsubmit(type="submit", name="submit", value="Register")
+//- .confoot
+//-   h2 Created By Aghara Prashant & Ashara Hussain

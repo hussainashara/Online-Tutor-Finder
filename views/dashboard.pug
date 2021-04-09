@@ -1,0 +1,45 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+meta(name="viewport", content="initial-scale=1,maximum-scale=1")
+script(src="https://kit.fontawesome.com/254728b4de.js", crossorigin="anonymous")
+link(rel="stylesheet", href="CSS/dashboard.css")
+.header
+  nav.navbar
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href="/home") Home
+      li.nav-item
+        a.nav-link(href="/search") Search
+      li.nav-item
+        a.nav-link(href="service.html") For Teachers
+      li.nav-item(href="#")
+        a.nav-link(href="blog.html") For Students
+      li.nav-item(href="#")
+        a.nav-link(href="contact.html") Contact Us
+//- .conhead
+//-   p You Can see the details of the Students who have booked You and can contact them
+.count
+  h4= "Number of Student Enrolled : " + len 
+.container
+  if records==""
+    .nodatamssg#nodatamssbox 
+      h4= "No Students Enrolled Yet" 
+  else
+    each record in records
+      .card
+        img.profilepic(src="images/student.png", alt="alt", style="width: 40%")
+        h4= "Username : " + record.username
+        h4.title= "Name : " + record.firstname + " " + record.lastname 
+        .subject
+          if record.subject==undefined
+            h4= "Interested Subject : " 
+          else 
+            h4= "Interested Subject : " + record.subject
+        p= "Phone : " + record.phone 
+        p= "City : " + record.town
+        .about 
+          if record.about==undefined
+            p= "About : "              
+          else
+            p= "About : " + record.about 

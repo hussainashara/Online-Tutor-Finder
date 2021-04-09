@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(27, 27, 27, 0.5)),url(../images/inform.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 100px;    */
+    color: black;
+    background-color: white;
+    height: 40px;
+    border-bottom: 2px solid black;
+}
+.conhead h2{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container form{
+    margin: auto;
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border-radius: 20px;  */
+    background-color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* border-bottom: 2px solid whitesmoke;     */
+}
+/* @keyframes mymove{
+    50% {  box-shadow: 5px 3px 50px ;    }
+} */
+
+label{
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+select{
+    width: 351px;
+    height: 30px;
+    border: 1px solid gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}
+input{
+    width: 350px;
+    padding: 5px;
+    /* height: 20px; */
+    /* border-radius: 5px; */
+    border: 1px solid gray;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+textarea{
+    width: 350px;
+    resize: none;
+    border: 1px solid gray;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}
+.container .div1{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 400px ;
+    margin-top: 20px;
+}
+.container .div2{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    width: 400px ;
+    margin-top: 20px;
+}
+.submit a{
+    text-decoration: none;
+}
+
+
+.submit{
+    padding: 30px;
+}
+.submit .btnsubmit{
+    font-size: 15px;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    color:white;
+    /* width: 100px; */
+    border-radius: 40px;
+    border: 1px solid rgb(26, 26, 26);
+    background-color: rgb(79, 173, 99);
+ }
+/* .submit input.btnsubmit{
+    height: 45px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+} */
+.confoot{
+    margin-top: 165px ;
+    border: 2px solid #000000 ; 
+    /* margin-bottom: 50px ; */
+    /* background-image: url(images/backHead.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}            
+.confoot h2{
+    font-size: 20px; 
+    color: white ;
+    text-align: center;
+}
+.submit .btnsubmit:hover{
+    background-color: teal;
+}

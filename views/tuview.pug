@@ -1,0 +1,88 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href="CSS/tutview.css")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+title View Your Profile
+.header
+  nav.navbar
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href="/home") Home
+      li.nav-item
+        a.nav-link(href="/search") Search
+      li.nav-item
+        a.nav-link(href="service.html") For Teachers
+      li.nav-item(href="#")
+        a.nav-link(href="blog.html") For Students
+      li.nav-item(href="#")
+        a.nav-link(href="contact.html") Contact Us
+.container
+  .photo
+    #profile-container
+      img#profileImage(src="../images/studentt.jpg")
+  .firstbox
+    .div1
+      h3.label First Name
+      p#fname.fname= tutdata.firstname
+      |
+      h3.label Gender
+      p#gender= tutdata.gender
+      |
+      h3.label Address 1
+      textarea#add1(name="add1", cols="35", rows="3", readonly)= tutdata.address1
+      |
+      h3.label Town/City
+      p.town#town= tutdata.town
+      |
+      h3.label Country
+      p#country.country= tutdata.country
+      |
+    .div2
+      h3.label Last Name
+      p#lname.lname= tutdata.lastname
+      |
+      h3.label Phone Number
+      p.phone#phone= tutdata.phone
+      |
+      h3.label Address 2
+      textarea#add2(name="add2", cols="35", rows="3", readonly)= tutdata.address2
+      |
+      h3.label State
+      p.town#town= tutdata.state
+      |
+      h3.label Qualification
+      textarea(name="add2", cols="35", rows="2", readonly)= tutdata.qualification
+  .secondbox
+    .div3
+      h3.label Your Subjects
+      p.sub1#sub1= tutdata.subject
+      |
+      h3.label Level
+      p.sub1#sub1= tutdata.searchlevel
+      |
+      h3.label Fees
+      p= tutdata.fees + " rs"
+    .div4
+      h3.label Bio
+      textarea#bio(name="bio", cols="35", rows="3", readonly)= tutdata.about
+      |
+  .submit
+      a(href="/edit-profile-tut") Edit Profile
+
+
+
+  //- <script>
+  //-     $("#profileImage").click(function (e) {
+  //-         $("#imageUpload").click();
+  //-     });
+  
+  //-     function fasterPreview(uploader) {
+  //-         if (uploader.files && uploader.files[0]) {
+  //-             $('#profileImage').attr('src' window.URL.createObjectURL(uploader.files[0]));
+  //-         }
+  //-     }
+  
+  //-     $("#imageUpload").change(function () {
+  //-         fasterPreview(this);
+  //-     });
+  //- </script> 

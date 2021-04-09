@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/forget.css">
+    <title>Forgot Password</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Reset Password</h1>
+    </div>
+    <div class="container">
+        
+        <form action="/reset" method="POST">
+            <input type="text" name="username" id="username" class="username" placeholder="Username"><br><br>
+            
+            <input type="password" name="old" id="old" class="old" placeholder="Old Password"><br><br>
+            
+            <input type="password" name="new" id="new" class="new" placeholder="New Password"><br><br>
+            
+            <input type="submit" name="submit" id="submit" value="Reset">
+        </form>
+    </div>
+    <div class="footer">
+        <h1>Created By Aghara Prashant & Ashara Hussain</h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-image: url('./static/images/pexels-august-de-richelieu-4260475.jpg'); */
+}
+body{
+    width: 100%;
+    background-image: url(/static/images/pexels-andrea-piacquadio-3769981.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.header{
+    background-color: #7aa3e6;
+    height: 70px;    
+}
+h1{
+    color: white;   
+}
+.navbar-nav{
+    display: flex;
+    margin-left: 30px;
+    /* border: 1px solid blue; */
+    height: 70px; 
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    text-decoration:none;   
+    /* font-size: 1.2rem; */    
+}
+.nav-item{
+    display: flex;
+    font-size: 16px;
+    padding: 8px;
+    text-decoration:none; 
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* margin-left: 5px; */
+    margin-right: 10px;
+    /* border: 1px solid black; */    
+}
+.nav-item:hover{
+    background-color: #6386bd;
+    cursor: pointer;
+}
+.conhead{
+    /* margin-top: 10px ; */
+    text-align: center;
+    background-color: #7aa3e6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 70px; 
+}
+.conhead p{
+    
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    /* margin-bottom: 10px; */
+}
+.count h4{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+#nodatamssbox{
+    margin-left: auto;
+    text-align: center;
+    width: 1000px;
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 18px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #b94a48;
+    border-color: #eed3d7;
+    border: 1px solid #ebccd1;
+    background-color: #f2dede;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    line-height: 1.4;
+}
+
+.container {
+    margin: auto;
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    /* flex-direction: column; */
+    /* border: 2px solid red; */
+    width: 1000px;
+    margin-left: 110px;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.card {
+    background-color: whitesmoke;
+    margin: 10px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    /* margin: auto; */
+    text-align: center;
+    font-family: arial;
+    height: 400px;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+.card .profilepic{
+    border-radius: 50%;
+    border: .5px solid gray;
+}
+.card h4,p{
+    padding: 10px;
+    color: grey;
+    font-size: 18px;
+}  
+  .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* transform: rotateY(180deg); */
+
+}

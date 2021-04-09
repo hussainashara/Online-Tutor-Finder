@@ -1,0 +1,49 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href="CSS/tutordescpage.css")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+title Tutor Profile
+.header
+  h2 Tutor's Profile
+.wholebox
+  .container
+    .firstbox 
+      .firstboxone
+            #profile-container
+                img#profileImage(src="images/tutor.png")
+            .firstdescboxone
+                h3.firstname= tutdata.first_name
+                .firstboxlistitems
+                    h3.label Ratings :
+                    h3.value.starrating= "★ "+tutdata.rating 
+                .firstboxlistitems
+                    h3.label Fees : 
+                    h3.fees= "₹ "+tutdata.fees
+      .firstboxtwo 
+            .firstboxlistitems
+                    h3.label Description : 
+                    p.tutordesc= tutdata.about
+            .firstboxlistitems
+                    h3.label Availability : 
+                    p.tutordesc= tutdata.timings
+            .firstboxlistitems
+                    h3.label Qualification : 
+                    p.tutordesc= tutdata.qualification
+    .secondbox
+      h2.heading Contact Details 
+      .firstboxlistitems
+          h3.label Phone Number :  
+          p.contactdesc= tutdata.phone
+      .firstboxlistitems
+          h3.address.label Address :
+          p.contactdesc= tutdata.address1
+      .firstboxlistitems
+          h3.label City/Town :
+          p.contactdesc= tutdata.town 
+      .firstboxlistitems
+          h3.label State :
+          p.contactdesc= tutdata.state 
+      .firstboxlistitems
+          h3.label Country :
+          p.contactdesc= tutdata.country
+    

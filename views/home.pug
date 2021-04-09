@@ -1,0 +1,210 @@
+//  basic 
+meta(charset="utf-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+//  mobile metas 
+meta(name="viewport", content="width=device-width,initial-scale=1")
+meta(name="viewport", content="initial-scale=1,maximum-scale=1")
+link(rel="stylesheet", href="CSS/home.css")
+script(src="https://kit.fontawesome.com/254728b4de.js", crossorigin="anonymous")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js") 
+//  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+//  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> 
+.outerbox
+  .header
+    nav.navbar
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href="/home") Home
+        li.nav-item
+          a.nav-link(href="/search") Search
+        li.nav-item#for-tutorr
+          a.nav-link For Teachers
+        li.nav-item#for-studentt
+          a.nav-link For Students
+        li.nav-item#contactuss
+          a.nav-link Contact Us
+        div.profile-h
+          div.profile-btn
+            p#nameletter
+          div.profile-content
+            a#firstnamea(style="display:none")=  records.firstname
+            a#lastnamea(style="display:none")=  records.lastname
+            a(href="/view-profile") View Profile
+            if category == "Tutor"
+              a(href="/dashboard") Students Enrolled
+            a(href="/logout") Logout
+          
+
+      //- li.log(href="#")
+      //-   .logdiv
+      //-     button#login.nav-login
+      //-       i.fas.fa-sign-in-alt
+      //-       | Login
+      //-     //  <a id="logintext" class="nav-login" href="#">Login</a> 
+      //-     #dropdownmenu
+      //-       form#loginform(method="post", name="loginform", action="/process-login.asp")
+      //-         input.input#username(type="text", placeholder="Username", name="username")
+      //-         input.input#password(type="password", placeholder="Password", name="password")
+      //-         button.login-in(href="#") Login
+      //-         a(href="#") Forgot Password?
+      //- li.log(href="#")
+      //-   button#register.nav-login
+      //-     i.fas.fa-user-plus
+      //-     | Register
+  .hero
+    #logo-img
+      //- img.logo-img(src="/static/images/1.png", alt)
+    .container
+      h1 Find The Best Tutor For You
+      form.search-form(action="/search")
+        .search
+          .searchhome
+            input#subject.input(name="subject", placeholder="Enter a Subject")
+          .searchhome
+            input#poscode.input(name="postalcode", placeholder="Enter your Postal-code")
+          .searchhome
+            input#stuaddress.input(name="stuaddress", placeholder="Enter your Address")
+          .searchhome1
+            select#searchlevel(name="searchlevel")
+              option(value="" selected ) Select Level
+              option(value="1to5") class 1 to 5
+              option(value="5to9") class 5 to 9
+              option(value="c10") class 10
+              option(value="c12") class 11 & 12
+              option(value="degree") Degree 
+              option(value="adult") Adult Learner
+          .searchcolbut
+          button(type="submit").search-button SEARCH
+.how-works
+  .how-container
+    h3 How It Works
+    .how-items
+      .how-item
+        img.how-icon(src="images/search-man.png", alt)
+        h4 Search tutors online or in-person
+        p Search local tutors by subject and level.
+      .how-item
+        img.how-icon(src="images/certificate.png", alt)
+        h4 View tutors' qualifications
+        p View tutors' qualifications, feedback and experience.
+      //- .how-item
+      //-   img.how-icon(src="images/connect.png", alt)
+      //-   h4 Contact as many tutors as you like
+      //-   p Contact as many tutors as you would like.
+      .how-item
+        img.how-icon(src="images/tutor.png", alt)
+        h4 Select your perfect tutor
+        p Book your perfect tutor and start your first lesson.
+.for-ts#forpage
+  .ts-container
+    h3 Explore Tutor Finder
+    .ts-inner
+     .for-student.innerbox
+        h5 For
+        h4 STUDENT
+        ul
+          li
+            img(src="images/check.png", alt)
+            | 
+            | Search for online and local tutors
+            |
+          li
+            img(src="images/check.png", alt)
+            | 
+            | Make Your Profile
+            |  
+          li
+            img(src="images/check.png", alt)
+            | 
+            |  Communicate with any of our tutors for free
+            |
+          li
+            img(src="images/check.png", alt)
+            | 
+            | Book Tutors
+        button.inner-button1 Register
+     .for-teacher.innerbox
+         h5 For
+         h4.
+           TUTOR
+         ul
+           li
+            img(src="images/check.png", alt)
+            | 
+            | Our site is completely free for tutors.
+            |
+           li
+            img(src="images/check.png", alt)
+            | 
+            | Create your own profile and advertise your services.
+            |     
+           li
+            img(src=" images/check.png", alt)
+            | View students that enrolled your course
+         button.inner-button2 Register
+//
+   <div class="choice">
+              <div class="slide-review">
+                      <h3>Customers Review</h3>
+                      <div class="slide-inner">
+                          <ul>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                          </ul>
+                      </div>
+  
+              </div>
+          </div> 
+.contact-us
+  .contact-container
+    .contact-form
+      h2.major Contact Us
+      form(method="post", action="contact-handler")
+        .fields
+          .field.half
+            label(for="name") Your Name
+            input#name(type="text", name="name", placeholder="Name")
+          .field.half
+            label(for="email") Your Email
+            input#email(type="text", name="email",placeholder="Email")
+          .field
+            label(for="message") Message
+            textarea#message(name="message", rows="4", placeholder="Type Your Message Here ")
+        ul.actions
+          li
+            input.primary(type="submit", name="submit", value="Send Message")
+          li
+            input(type="reset", value="Reset")
+script.
+
+
+  $(document).ready(function(){
+  var firstName = $('#firstnamea').text();
+  var lastName = $('#lastnamea').text();
+  var intials = firstName.charAt(0) + " "+lastName.charAt(0);
+  $('#nameletter').text(intials);
+
+  $('#for-tutorr').click(function(){
+    //- alert("for tutor");
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $(".for-ts").offset().top
+    }, 1000);
+  })
+  $('#for-studentt').click(function(){
+    //- alert("for tutor");
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $(".for-ts").offset().top
+    }, 1000);
+  })
+   $('#contactuss').click(function(){
+    //- alert("for tutor");
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $(".contact-us").offset().top
+    }, 1000);
+  }) 
+  });
+
+  

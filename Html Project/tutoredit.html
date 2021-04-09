@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/tutedit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Edit Profile</title>
+</head>
+
+<body>
+    <div class="header">
+        <H2>Edit Profile</H2>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <div id="profile-container">
+                <image id="profileImage" src="CSS/images/tutor.png" />
+            </div>
+            <input id="imageUpload" type="file" name="profile_photo" class="profile" placeholder="Photo" required="" capture>
+        </div>
+        <div class="div1">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" class="fname" maxlength="25">
+            <br><br>
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="male">Female</option>
+                <option value="male">Others</option>
+            </select>
+            <br><br>
+            <label for="add1">Address 1</label><br>
+            <textarea name="add1" id="add1" cols="33" rows="3"></textarea>
+            <br><br>
+            <label for="town">Town/City</label><br>
+            <input type="text" class="town" id="town">
+            <br><br>
+            <label for="country">Country</label><br>
+            <input type="text" id="country" class="country">
+            <br><br>
+        </div>
+        <div class="div2">
+            <label for="fname">Last Name</label><br>
+            <input type="text" id="lname" class="lname" maxlength="25">
+            <br><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="number" class="phone" id="phone" maxlength="10">
+            <br><br>
+            <label for="add1">Address 2</label><br>
+            <textarea name="add2" id="add2" cols="33" rows="3"></textarea>
+            <br><br>
+            <label for="state">State</label><br>
+            <input type="text" class="state" id="state">
+            <br><br>
+        </div>
+        <div class="extra">
+            <div class="sub">
+                <label for="subject">Subjects You Will Be able to Teach And Its fees</label><br>
+                <input type="text" class="sub1" id="sub1" placeholder="Subject 1">
+                <input type="text" name="fee1" id="fee1" placeholder="Fees">
+                <br>
+                <input type="text" class="sub2" id="sub2" placeholder="Subject 2">
+                <input type="text" name="fee1" id="fee1" placeholder="Fees"><br>
+                <input type="text" class="sub3" id="sub3" placeholder="Subject 3">
+                <input type="text" name="fee1" id="fee1" placeholder="Fees"><br>
+                <input type="text" class="sub4" id="sub4" placeholder="Subject 4">
+                <input type="text" name="fee1" id="fee1" placeholder="Fees"><br><br>
+            </div>
+            <label for="institute">Institute Name</label><br>
+            <input type="text" class="institute" id="institute">
+            <br><br>
+        </div>
+        <div class="bio">
+            <label for="qualify">Your Qualification</label><br>
+            <input type="text" class="qualify" id="qualify">
+            <br><br>
+            <textarea name="bio" id="bio" cols="60" rows="10">Enter More About Yourself</textarea>
+            <br><br>
+        </div>
+        <div class="submit">
+            <a href="tutorview.html">Submit Changes</a>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <h2>Created By Aghara Prashant & Ashara Hussain</h2>
+        </footer>
+    </div>
+</body>
+
+<script>
+    $("#profileImage").click(function (e) {
+        $("#imageUpload").click();
+    });
+
+    function fasterPreview(uploader) {
+        if (uploader.files && uploader.files[0]) {
+            $('#profileImage').attr('src',
+                window.URL.createObjectURL(uploader.files[0]));
+        }
+    }
+
+    $("#imageUpload").change(function () {
+        fasterPreview(this);
+    });
+</script>
+
+</html>

@@ -1,0 +1,59 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href="CSS/regstyle.css")
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+title Register
+script.
+  function check_pass() {
+          var pass = document.getElementById('password').value;
+          var confirm = document.getElementById('confirm').value;
+  
+          if (pass == confirm) {
+              document.getElementById('submit').disabled = false;
+          }
+          else {
+              document.getElementById('submit').disabled = true;
+              document.getElementByID('submit').color = red;
+          }
+      }
+//- .conhead
+  //- .header
+    //- h2 Register Yourself
+    //- p If you are a tutor or student please fill in the form below. If any student / tutor viewing this site searches for your criteria, we will give them the opportunity to contact you.
+.container
+  .registerbox  
+    .content
+      h3.heading Register
+      form#register(action="/register", method="POST")
+        br
+        select(name="user")
+          option(name="Tutor", value="Tutor") Tutor
+          option(name="Student", value="Student") Student
+        br
+        p= msg 
+        i.fa.fa-user.icon
+        input#username(type="text", name="username", maxlength="25", placeholder="Username", required)
+        br
+        p= msg1
+        i.fa.fa-envelope.icon
+        input#email(type="email", name="email", maxlength="100", placeholder="Email", required)
+        br
+        br
+        i.fa.fa-lock.icon
+        input#password(type="password", name="password", maxlength="100", placeholder="Password", onkeyup="check_pass()", required)
+        br
+        br
+        i.fa.fa-lock.icon
+        input#confirm(type="password", name="confirm", maxlength="100", placeholder="Confirm Password", onkeyup="check_pass()", required)
+        br
+        .submit
+          input#submit.btnsubmit(type="submit", name="submit", value="Next", disabled)
+        .login
+          h3 Already Have An Account?
+          a(href="login") Login
+  .image-container
+      img(src="../images/register-page.jpg", alt="")
+    
+//- .confoot
+//-   footer
+//-     h2 Created By Aghara Prashant & Ashara Hussain

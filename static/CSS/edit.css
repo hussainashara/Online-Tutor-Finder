@@ -1,0 +1,136 @@
+body{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    /* background-color: sandybrown; */
+    background-image: url(../images/pexels-august-de-richelieu-4260475.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.header{
+    background-color: green;
+    padding: 1px;
+    text-align: center;
+    color: whitesmoke;
+    background-image: url(images/backHead.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container{
+    /* border: 2px solid red; */
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    animation: mymove 5s infinite;
+    
+}
+@keyframes mymove{
+    50% {  box-shadow: 5px 3px 50px ;    }
+}
+
+.container .div1{
+    /* border: 2px solid blue; */
+    width: 450px;
+    margin-top: 55px;
+}
+.container .div2{
+    /* border: 2px solid blue; */
+    width: 450px;
+}
+.container .extra{
+    /* border: 2px solid blue; */
+    width: 450px;
+    height: 200px;
+    padding-top: 35px;
+}
+.container .bio{
+    /* border: 2px solid blue; */
+    width: 480px;
+    margin-top: 5px;
+    padding-top: 35px;
+    height: 250px;
+}
+.container .submit{
+    border: 2px solid green;
+    width: 160px;
+    border-radius: 10px;
+    background-color: green;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit a{
+    text-decoration: none;
+    color: white;
+}
+select{
+    width: 351px;
+    height: 30px;
+    border-radius: 10px;
+}
+input{
+    width: 350px;
+    height: 20px;
+    border-radius: 10px;
+    border: ridge;
+}
+textarea{
+    border-radius: 10px;
+    width: 350px;   
+}
+.footer{
+    margin-top: 50px;
+    text-align: center;
+    background-color: green;
+    color: whitesmoke;
+    padding: 1px;
+    background-image: url(images/backHead.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#imageUpload
+{
+    display: none;
+}
+.container .photo{
+    /* border: 2px solid blue; */
+    width: 1110px;
+    margin-top: 30px;
+    
+}
+#profileImage
+{
+    cursor: pointer;
+    /* border: black; */
+}
+
+#profile-container {
+    border: 2px solid black;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+    /* border: 3px solid black; */
+}

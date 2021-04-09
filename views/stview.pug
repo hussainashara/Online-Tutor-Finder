@@ -1,0 +1,84 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href="CSS/stuview.css")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+title View Your Profile
+.header
+  nav.navbar
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href="/home") Home
+      li.nav-item
+        a.nav-link(href="/search") Search
+      li.nav-item
+        a.nav-link(href="service.html") For Teachers
+      li.nav-item(href="#")
+        a.nav-link(href="blog.html") For Students
+      li.nav-item(href="#")
+        a.nav-link(href="contact.html") Contact Us
+.container
+  .photo
+    #profile-container
+      img#profileImage(src="../images/studentt.jpg")
+  .firstbox
+    .div1
+      h3.label First Name
+      p#fname.fname= studata.firstname
+      |
+      h3.label Gender
+      p#gender= studata.gender
+      |
+      h3.label Address 1
+      textarea#add1(name="add1", cols="35", rows="3", readonly)= studata.address1
+      |
+      h3.label Town/City
+      p.town#town= studata.town
+      |
+      h3.label Country
+      p#country.country= studata.country
+      |
+    .div2
+      h3.label Last Name
+      p#lname.lname= studata.lastname
+      |
+      h3.label Phone Number
+      p.phone#phone= studata.phone
+      |
+      h3.label Address 2
+      textarea#add2(name="add2", cols="35", rows="3", readonly)= studata.address2
+      |
+      h3.label State
+      p.town#town= studata.state
+      |
+  .secondbox
+    .div3
+      h3.label Class
+      p.std#std= studata.class
+      |
+      h3.label Your Subject
+      p.sub1#sub1= studata.subject
+      |
+    .div4
+      h3.label Bio
+      textarea#bio(name="bio", cols="35", rows="3", readonly)= studata.about
+      |
+  .submit
+      a(href="/edit-profile-stu") Edit Profile
+
+
+
+  //- <script>
+  //-     $("#profileImage").click(function (e) {
+  //-         $("#imageUpload").click();
+  //-     });
+  
+  //-     function fasterPreview(uploader) {
+  //-         if (uploader.files && uploader.files[0]) {
+  //-             $('#profileImage').attr('src' window.URL.createObjectURL(uploader.files[0]));
+  //-         }
+  //-     }
+  
+  //-     $("#imageUpload").change(function () {
+  //-         fasterPreview(this);
+  //-     });
+  //- </script> 

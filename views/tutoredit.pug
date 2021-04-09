@@ -1,0 +1,99 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href="CSS/tutedit.css")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+title View Your Profile
+.header
+  nav.navbar
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href="/home") Home
+      li.nav-item
+        a.nav-link(href="/search") Search
+      li.nav-item
+        a.nav-link(href="service.html") For Teachers
+      li.nav-item(href="#")
+        a.nav-link(href="blog.html") For Students
+      li.nav-item(href="#")
+        a.nav-link(href="contact.html") Contact Us
+.container
+ form(method="post" action="/view-profile") 
+  .photo
+    #profile-container
+      img#profileImage(src="../images/fin-plus.png")
+      input#imageUpload.profile(type="file", name="profile_photo", placeholder="Photo",capture)
+  .firstbox
+    .div1
+      h3.label First Name
+      input#fname.fname(type="text", maxlength="25", name="first_name",value=tutdata.firstname)
+      |
+      h3.label Gender
+      select#gender(name="gender")
+        option(value="male") Male
+        option(value="female") Female
+        option(value="others") Others
+      |
+      h3.label Address 1
+      textarea#add1(name="address1", cols="33", rows="3")= tutdata.address1
+      |
+      h3.label Town/City
+      input.town#town(type="text", name="town",value=tutdata.town)
+      |
+      h3.label Country
+      input#country.country(type="text", name="country",value=tutdata.country)
+      |
+    .div2
+      h3.label Last Name
+      input#lname.lname(type="text", maxlength="25", name="last_name",value=tutdata.lastname)
+      |
+      h3.label Phone Number
+      input.phone#phone(type="", maxlength="10" ,name="phone",value=tutdata.phone)
+      |
+      h3.label Address 2
+      textarea#add2(name="address2", cols="35", rows="3")= tutdata.address2
+      |
+      h3.label State
+      input.state#state(type="text" , name="state",value=tutdata.state)
+      |
+      h3.label Qualification
+      textarea(name="qualification", cols="35", rows="2")= tutdata.qualification
+  .secondbox
+    .div3
+      h3.label Your Subjects
+      input.sub1#sub1(type="text", placeholder="Subject", name="subjectname",value=tutdata.subject)
+      |
+      h3.label Level 
+      select#searchlevel(name="searchlevel")
+        option(value="all") All Levels
+        option(value="1to5") class 1 to 5
+        option(value="5to9") class 5 to 9
+        option(value="c10") class 10
+        option(value="c12") class 11 & 12
+        option(value="degree") Degree 
+        option(value="adult") Adult Learner
+      |
+      h3.label Fees
+      input(type=number, name="fees",value=tutdata.fees)
+    .div4
+      h3.label Bio
+      textarea#bio(name="desc", cols="35", rows="3")= tutdata.about 
+  button.submit(type="submit")  Submit 
+
+
+
+script.
+  $("#profileImage").click(function (e) {
+        $("#imageUpload").click();
+    });
+  
+  function fasterPreview(uploader) {
+    if (uploader.files && uploader.files[0]) {
+      $('#profileImage').attr('src',
+      window.URL.createObjectURL(uploader.files[0]));
+      }
+    }
+  
+    $("#imageUpload").change(function () {
+      fasterPreview(this);
+    });
+  

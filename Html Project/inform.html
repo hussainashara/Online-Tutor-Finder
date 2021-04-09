@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/CSS/inform.css">
+    <title>Register Yourself</title>
+</head>
+
+<body>
+    <div class="conhead">
+        <h2>Register Yourself</h2>
+    </div>
+    <div class="container">
+        <form action="/inform" method="POST">
+            <div class="div1">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" class="fname" name="fname" maxlength="25">
+                <br><br>
+                <label for="gender">Gender</label><br>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="male">Female</option>
+                    <option value="male">Others</option>
+                </select>
+                <br><br>
+                <label for="add1">Address 1</label><br>
+                <textarea name="add1" id="add1" cols="33" rows="3"></textarea>
+                <br><br>
+                <label for="town">Town/City</label><br>
+                <input type="text" class="town" id="town" name="town">
+                <br><br>
+                <label for="pincode">Postal Code</label><br>
+                <input type="number" id="pincode" class="pincode" name="pincode">
+                <br><br>
+            </div>
+            <div class="div2">
+                <label for="fname">Last Name</label><br>
+                <input type="text" id="lname" class="lname" maxlength="25" name="lname">
+                <br><br>
+                <label for="phone">Phone Number</label><br>
+                <input type="number" class="phone" id="phone" maxlength="10" name="phone">
+                <br><br>
+                <label for="add1">Address 2</label><br>
+                <textarea name="add2" id="add2" cols="33" rows="3"></textarea>
+                <br><br>
+                <label for="town">State</label><br>
+                <input type="text" class="state" id="state" name="state">
+                <br><br>
+                <label for="country">Country</label><br>
+                <input type="text" id="country" class="country" name="country">
+                <br><br>
+            </div>
+            <div class="submit">
+                <input type="submit" name="submit" id="submit" class="btnsubmit" value="Register">
+            </div>
+        </form>
+    </div>
+
+    <div class="confoot">
+        <h2>Created By Aghara Prashant & Ashara Hussain</h2>
+    </div>
+</body>
+
+</html>

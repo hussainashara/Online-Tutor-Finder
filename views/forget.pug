@@ -1,0 +1,17 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href="CSS/forget.css")
+title Forgot Password
+.header
+  h1 Forget Password
+.container
+  h3 Please Enter Your Email
+  form(action="/forget", method="POST")
+    //  <label for="email">Enter Your Email</label> 
+    input#email.email(type="email", name="email")
+    br
+    br
+    input#submit(type="submit", name="submit", value="Send OTP")
+//- .footer
+//-   h1 Created By Aghara Prashant & Ashara Hussain

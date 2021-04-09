@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+/* .conhead p{
+    /* padding: 5px; */
+    /* padding-bottom: 15px; */
+    /* animation: move 3s;
+    -webkit-animation: move 3s;
+     */
+/* } */ 
+.container{
+    display: flex;
+    width:100%;
+    height: 100%;
+}
+/* @keyframes mymove{
+    50%{box-shadow: 10px 5px 20px black;}
+} */
+.image-container{
+    display: flex;
+    width: 60%;
+    /* background-image: ; */
+    /* border: 2px solid black; */
+    /* height: 200px; */
+}
+.image-container img{
+    /* height: 200px; */
+}
+.registerbox{
+    width: 40%;
+    display: flex;
+    background-color: rgb(140, 118, 160);
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+.content{
+   display: flex;
+   flex-direction: column;
+   height: 75%;
+   width: 60%;
+   /* align-items: center; */
+   justify-content: center;
+   /* margin: auto; */
+   text-align: center;
+   color: whitesmoke;
+   /* margin-top: 80px; */
+   border-radius: 8px; 
+   background-color: rgb(255, 255, 255);
+   border: 1px solid black;
+   /* padding-top: 30px; */
+   padding: 10px;
+   box-sizing: border-box;
+   /* animation: mymove 5s infinite; */
+}
+.container p{
+    color: red;
+    text-align: center;
+    /* text-size-adjust: 10px; */
+    margin-top: 10px;
+}
+label{
+    color: black;
+    font-size: 15px;
+    /* margin-bottom: 50px; */
+}
+.icon { 
+    height: 20px;
+    width: 20px;
+    /* padding: 10px;  */
+    /* border: 1px solid blue; */
+    color: black; 
+    margin-right: 5px;
+    /* min-width: 50px;  */
+    text-align: center; 
+} 
+.heading{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+select{
+    width: 70%;
+    margin-left: 25px;
+    height: 25px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border-radius: 10px; */
+}
+input{
+    height: 25px;
+    width:70%;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+#username{
+    margin-top: 20px;
+}
+#email{
+    margin-top: 20px;
+}
+.submit{
+    padding: 20px;
+}
+.submit .btnsubmit{
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    color:white;
+    /* width: 100px; */
+    border-radius: 40px;
+    border: 1px solid rgb(161, 161, 161);
+    background-color: rgb(79, 173, 99);
+
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login h3{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin-right: 10px;
+}
+.login a{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    margin-right: 10px;
+}
+.btnsubmit{
+    width: 150px;
+    font-size: 15px;
+    padding: 5px;
+}
+.submit .done{
+    padding: 10px 20px;
+
+}
+/* .confoot
+{
+    margin-top: 100px ;
+    padding: 15px;
+    background-image: url(/static/images/backHead.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}          
+.confoot h2{
+    font-size: 20px; 
+    color: white ;
+    text-align: center;
+} */
+.container .login a{
+    /* text-decoration: none; */
+}
+.container .login a:hover{
+    color: red;
+}
+.submit .btnsubmit:hover{
+    background-color: teal;
+}

@@ -1,0 +1,34 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href="CSS/logstyle.css")
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+title Login
+
+.outerbox
+  .image-container
+    img(src="../images/login-page.jpg", alt="")
+  .container
+    .loginbox
+      form(action="/login", method="POST")
+        .content
+          h2.headinglog Login
+          h4= msg 
+          h3= msg1 
+          i.fa.fa-user.icon
+          input#username(type="text", name="username", maxlength="25", placeholder="Username")
+          br
+          br
+          i.fa.fa-lock.icon
+          input#password(type="password", name="password", maxlength="100", placeholder="Password")
+          .submit
+            input#login.btnlogin(type="submit", name="login", value="Login")
+          .password
+            a(href="forget") Forget Password
+          .register
+            h5 Don't have an account? 
+            a(href="register") Sign Up 
+          
+          //- .reset
+          //-   a(href="reset") Reset Password
+//- .confoot
+//-   h2 Created By Aghara Prashant & Ashara Hussain

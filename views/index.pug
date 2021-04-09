@@ -1,0 +1,199 @@
+//  basic 
+meta(charset="utf-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+//  mobile metas 
+meta(name="viewport", content="width=device-width,initial-scale=1")
+meta(name="viewport", content="initial-scale=1,maximum-scale=1")
+link(rel="stylesheet", href="CSS/index.css")
+script(src="https://kit.fontawesome.com/254728b4de.js", crossorigin="anonymous")
+//  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+//  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> 
+//  body 
+.header
+  nav.navbar
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href="/") Home
+      li.nav-item
+        a.nav-link(href="/search") Search
+      li.nav-item
+        a.nav-link(href="service.html") For Teachers
+      li.nav-item(href="#")
+        a.nav-link(href="blog.html") For Students
+      li.nav-item(href="#")
+        a.nav-link(href="contact.html") Contact Us
+      div.profile-h
+        button.profile-btn User
+        div.profile-content
+          a(href="/view-profile") View Profile   
+          a(href="") Logout
+          
+
+      //- li.log(href="#")
+      //-   .logdiv
+      //-     button#login.nav-login
+      //-       i.fas.fa-sign-in-alt
+      //-       | Login
+      //-     //  <a id="logintext" class="nav-login" href="#">Login</a> 
+      //-     #dropdownmenu
+      //-       form#loginform(method="post", name="loginform", action="/process-login.asp")
+      //-         input.input#username(type="text", placeholder="Username", name="username")
+      //-         input.input#password(type="password", placeholder="Password", name="password")
+      //-         button.login-in(href="#") Login
+      //-         a(href="#") Forgot Password?
+      //- li.log(href="#")
+      //-   button#register.nav-login
+      //-     i.fas.fa-user-plus
+      //-     | Register
+.hero
+  #logo-img
+    //- img.logo-img(src="/static/images/1.png", alt)
+  .container
+    h1 Find The Best Tutor For You
+    form.search-form(action="/search")
+      .search
+        .searchhome
+          input#subject.input(name="subject", placeholder="Enter a Subject")
+        .searchhome
+          input#poscode.input(name="postalcode", placeholder="Enter your Postal-code")
+        .searchhome
+          input#class.input(name="class", placeholder="Enter your class")
+        .searchcolbut
+        button(type="submit").search-button SEARCH
+.how-works
+  .how-container
+    h3 How It Works
+    .how-items
+      .how-item
+        img.how-icon(src="CSS/images/search-man.png", alt)
+        h4 Search tutors online or in-person
+        p Search local tutors by subject and level.
+      .how-item
+        img.how-icon(src="CSS/images/certificate.png", alt)
+        h4 View tutors' qualifications
+        p View tutors' qualifications, feedback and experience.
+      .how-item
+        img.how-icon(src="CSS/images/connect.png", alt)
+        h4 Contact as many tutors as you like
+        p Contact as many tutors as you would like.
+      .how-item
+        img.how-icon(src="CSS/images/tutor.png", alt)
+        h4 Select your perfect tutor
+        p Select your perfect tutor and book your first lesson.
+.for-ts
+  .ts-container
+    h3 Explore Tutor Finder
+    .ts-inner
+     .for-student.innerbox
+        h5 join as a
+        h4 STUDENT
+        ul
+          li
+            img(src="CSS/images/check.png", alt)
+            | 
+            | Search for online and local tutors
+            |
+          li
+            img(src="CSS/images/check.png", alt)
+            | 
+            |  Communicate with any of our tutors for free
+            |
+          li
+            img(src="CSS/images/check.png", alt)
+            | 
+            | Manage your lessons through our bookings system
+
+          li
+            img(src="CSS/images/check.png", alt)
+            | 
+            |  If you are not satisfied with your tutor we will refund our fee
+              
+        button.inner-button1 Register
+     .for-teacher.innerbox
+         h5 join as a
+         h4.
+           TUTOR
+         ul
+           li
+            img(src="CSS/images/check.png", alt)
+            | 
+            | Our site is completely free for tutors.
+            |
+           li
+            img(src="CSS/images/check.png", alt)
+            | 
+            | Create your own profile and advertise your services
+            |     
+           li
+            img(src="CSS/images/check.png", alt)
+            | Tutor both face to face or online using our interactive whiteboard
+           li
+            img(src="CSS/images/check.png", alt)
+            | Search for tuition jobs using our search
+         button.inner-button2 Register
+//
+   <div class="choice">
+              <div class="slide-review">
+                      <h3>Customers Review</h3>
+                      <div class="slide-inner">
+                          <ul>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                              <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p></li>
+                          </ul>
+                      </div>
+  
+              </div>
+          </div> 
+.contact-us
+  .contact-container
+    .contact-form
+      h2.major Contact Us
+      form(method="post", action="contact-handler")
+        .fields
+          .field.half
+            label(for="name") Your Name
+            input#name(type="text", name="name")
+          .field.half
+            label(for="email") Your Email
+            input#email(type="text", name="email")
+          .field
+            label(for="message") Message
+            textarea#message(name="message", rows="4", placeholder="Type Your Message Here ")
+        ul.actions
+          li
+            input.primary(type="submit", name="submit", value="Send Message")
+          li
+            input(type="reset", value="Reset")
+
+
+//- //  For Login box open close (homepage) 
+//- script.
+  
+//-   let dropdownBtn = document.querySelector('#login');
+//-   let dropdownmenu = document.querySelector('#dropdownmenu');
+//-   dropdownBtn.addEventListener('click',()=>{
+//-      if(dropdownmenu.style.display===""){
+//-       dropdownmenu.style.display="block";
+//-       dropdownBtn.style.borderBottomLeftRadius="0px";
+//-       dropdownBtn.style.borderBottomRightRadius="0px";
+//-       dropdownBtn.style.borderTopLeftRadius="18px";
+//-       dropdownBtn.style.borderTopRightRadius="18px";
+//-       dropdownBtn.style.backgroundColor="white";
+//-       dropdownBtn.style.borderBottom="none";
+//-       dropdownBtn.style.height="45px";
+  
+//-       // dropdownBtn.style.background-color="white";
+//-      } else {
+//-       dropdownmenu.style.display="";
+//-       dropdownBtn.style.border="0.8px solid  rgb(61, 69, 73)";
+//-       dropdownBtn.style.borderBottomLeftRadius="50px";
+//-       dropdownBtn.style.borderBottomRightRadius="50px";
+//-       dropdownBtn.style.borderTopLeftRadius="50px";
+//-       dropdownBtn.style.borderTopRightRadius="50px";
+//-       dropdownBtn.style.height="35px";
+//-      }
+//-   })
+  
