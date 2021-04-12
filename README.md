@@ -6,7 +6,7 @@ Technology Used are :-
 Frontend : Pug\
 Backend : NodeJS, ExpressJS\
 Database : MongoDB\
-IDE : VScode\
+IDE : VScode
 
 Clone our Repository From Below Link :-
 https://github.com/hussainashara/Online-Tutor-Finder
@@ -15,10 +15,10 @@ https://github.com/hussainashara/Online-Tutor-Finder
 
 Steps to run the Project are as follows:
 
-1)You must have mongodb and node js installed on your PC. 
-Download Links of MongoDB and NodeJS is as follows:
-MongoDB : https://www.mongodb.com/try/download
-NodeJS : https://nodejs.org/en/download/
+1)You must have mongodb and node js installed on your PC.\ 
+Download Links of MongoDB and NodeJS is as follows:\
+MongoDB : https://www.mongodb.com/try/download\
+NodeJS : https://nodejs.org/en/download/\
 For simplicity also install MongoDB Compass.
 
 2)Download all the dependencies/Packages present in Package.json file by using command 
