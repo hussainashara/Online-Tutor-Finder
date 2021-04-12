@@ -33,6 +33,6 @@ For simplicity also install MongoDB Compass.
   Now run the app.js file using the below command
   $ node app.js 
 
-6) Now open any browser and start the web app on local host i.e.
+6)Now open any browser and start the web app on local host i.e.
    http://localhost:3000/
    You will be landed on our Welcome page.
