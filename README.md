@@ -3,10 +3,10 @@
 Online Tutor Finder is a web application where Student can search for online tutors and book best tutor for them and Teacher can make a free of cost profile on our site and can get a better job opportunity.
 
 Technology Used are :-
-Frontend : Pug 
-Backend : NodeJS, ExpressJS
-Database : MongoDB
-IDE : VScode 
+Frontend : Pug\
+Backend : NodeJS, ExpressJS\
+Database : MongoDB\
+IDE : VScode\
 
 Clone our Repository From Below Link :-
 https://github.com/hussainashara/Online-Tutor-Finder
