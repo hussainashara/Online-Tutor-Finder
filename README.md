@@ -15,7 +15,7 @@ https://github.com/hussainashara/Online-Tutor-Finder
 
 Steps to run the Project are as follows:
 
-1) You must have mongodb and node js installed on your PC. 
+1)You must have mongodb and node js installed on your PC. 
 Download Links of MongoDB and NodeJS is as follows:
 MongoDB : https://www.mongodb.com/try/download
 NodeJS : https://nodejs.org/en/download/
@@ -29,10 +29,10 @@ For simplicity also install MongoDB Compass.
 
 4)In Files App.js and admin.router.js add your Mail Id and Password where mentioned. 
 
-4)Open Terminal of VS Code ("ctrl +`": shortcut to open terminal)
+5)Open Terminal of VS Code ("ctrl +`": shortcut to open terminal)
   Now run the app.js file using the below command
   $ node app.js 
 
-5) Now open any browser and start the web app on local host i.e.
+6) Now open any browser and start the web app on local host i.e.
    http://localhost:3000/
    You will be landed on our Welcome page.
