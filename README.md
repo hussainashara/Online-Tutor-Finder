@@ -29,10 +29,10 @@ For simplicity also install MongoDB Compass.
 
 4)In Files App.js and admin.router.js add your Mail Id and Password where mentioned. 
 
-5)Open Terminal of VS Code ("ctrl +": shortcut to open terminal) \ 
-  Now run the app.js file using the below command \ 
+5)Open Terminal of VS Code ("ctrl +": shortcut to open terminal) \
+  Now run the app.js file using the below command \
   $ node app.js 
 
-6)Now open any browser and start the web app on local host i.e.\ 
-   http://localhost:3000/ \ 
+6)Now open any browser and start the web app on local host i.e.\
+   http://localhost:3000/ \
    You will be landed on our Welcome page.
