@@ -58,7 +58,7 @@ const adminBro = new AdminBro({
 // const data = Admin.find()
 
 
-admin = {email : 'prashant.aghara2111@gmail.com' , password : 'prashant21'}
+admin = {email : 'Admins Mail' , password : 'Mails password'}
 
 
 const router = AdminBroExpress.buildAuthenticatedRouter(adminBro,
